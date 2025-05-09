@@ -1,0 +1,153 @@
+body {
+  background-color: #ebf3fe;
+  font-family: Arial, sans-serif;
+  padding: 24px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.items_wrapper {
+  background-color: #f8f9fa;
+  padding: 5px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-item-btn {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  width: 160px;
+}
+
+.button {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .checkout-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .checkout-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.checkout-box {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-title {
+  font-size: 16px;
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkout-list {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.checkout-footer {
+  font-size: 14px;
+  color: #4a5568;
+  text-align: center;
+}
+
+.checkout-footer strong {
+  font-weight: 600;
+}
+
+.checkout-footer .number {
+  margin-top: 8px;
+}
+
+.custom-svg-class {
+  width: 20px;
+}
+
+.total-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.item_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 200px;
+}
+.checkout-box.active {
+  border: 3px solid darkgreen;
+  border-radius: 10px;
+  transition: border 0.3s ease;
+}
